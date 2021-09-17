@@ -1,0 +1,42 @@
+# Project information
+site_name: NCQA Template Project
+site_author: S Kuchta, c/o nistar
+site_description: NCQA Pilot project with advanced handling of ncqa annual certification data
+plugins:
+  - search
+  - macros:
+      include_dir: include
+theme: 
+  name: material
+  palette:
+    scheme: preference
+  icon: 
+    logo: material/book-open-outline
+  favicon: images/favicon.ico
+  font:
+      text: Open Sans
+  features:
+    - search.suggest
+    - navigation.instant
+    - navigation.tabs
+markdown_extensions:
+  - abbr
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - meta
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+extra_css:
+  - stylesheets/extra.css
+
+# Page tree - problem: nav definition stops automatic populating of nav. 
+#nav:
+#    - Home: index.md
+#    - Program Summaries: program-summaries/program-summaries.md
+#    - Program Guides: program-guides/program-guides.md
+#    - Group Summaries: group-summaries/group-summaries.md
+#    - Group Profiles: group-profiles/group-profiles.md

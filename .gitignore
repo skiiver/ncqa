@@ -1,2 +1,136 @@
-*.pyc
-.idea/
+# OS files, hidden dot files 
+# --------------------------
+## macOS
+.DS_Store
+
+# Office365
+# ---------
+*.xls* 
+*.doc*
+*.ppt*
+
+# Databases and Data Formats
+# --------------------------
+*.db
+*.sqlite
+*.rdb
+*.pkl 
+## TODO add other common pickle extensions if needed
+*.sas7bdat
+*.wpd
+## there are cases where we need to keep one or more of these
+## just be aware of unmetered growth
+*.csv
+# exclude synth data measure decks pre-processing (which come in txt format)
+*.txt 
+
+# MkDocs Documentation
+# --------------------
+/site
+## ignore static css, js, images, in the build. But, we may want to allow css?
+/docs/stylesheets
+/docs/javascripts
+/docs/images
+
+
+# Jupyter Notebooks
+# -----------------
+### Note use '/notebooks' if we want to ignore just the root (particular notebooks)
+#/notebooks
+### if we want to ignore all levels of ad hoc notebooks 
+#notebooks/
+### if we want to ignore lower levels of ad hoc notebooks, but keep the root notebooks, try
+#**/notebooks/*
+
+# Data and Ref Dirs
+# -----------------
+## note: if we only want the root-level versions of these dirs, use the following
+## note: we can symlink these root-level files from a cloud-synced folder for data/refs backup
+/references
+/reports
+/data
+## note: if we want to ignore /data, /reports, /references dirs at every level, use the following
+#references/
+#reports/
+#data/
+
+# Python Packaging 
+# ----------------
+## Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+## C extensions
+*.so
+
+## Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+## PyInstaller
+### Usually these files are written by a python script from a template
+###  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+## Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+## Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+## Translations
+*.mo
+*.pot
+
+## Django stuff:
+*.log
+
+## PyBuilder
+target/
+
+## DotEnv configuration
+.env
+
+
+# IDE Setup and Workspace Files
+# -----------------------------
+## Pycharm
+.idea
+## VS Code
+.vscode/
+*.code-workspace
+## Jupyter (evaluation and cache)
+.ipynb_checkpoints/
+## vim
+*.swp
+*.swo
+## Mypy cache
+.mypy_cache/
+.Rproj.user
+
+
+
+
